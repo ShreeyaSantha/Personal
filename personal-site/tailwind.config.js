@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         lpurple: "#DCCCFF",
-        while: "#FFFFFF",
+        white: "#FFFFFF",
         wpurple: "#F2EBFF",
         laven: "#C7AEFD",
         black: "#000000",

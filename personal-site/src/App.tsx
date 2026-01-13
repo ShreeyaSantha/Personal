@@ -9,9 +9,6 @@ function App() {
 
   return (
     <>
-      <nav className="w-full bg-laven h-16 flex items-center px-8 z-2">
-        {/* nav content */}
-      </nav>
       <Hero />
       {/* Your comment goes here 
       <div>
