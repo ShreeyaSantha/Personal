@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Hero from './components/Hero.tsx'
+import AboutMe from './components/AboutMe.tsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,8 @@ function App() {
   return (
     <>
       <Hero />
+      <AboutMe />
+
       {/* Your comment goes here 
       <div>
         <a href="https://vite.dev" target="_blank">
