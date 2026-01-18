@@ -1,20 +1,7 @@
 
-import { useState, useEffect } from 'react';
 import moon from '../assets/moon.png'
 import Star_Map from './UI/Star';
 import { useTypewriter } from './UI/TypeWriter';
-
-{/* else if (j == text[i].length && i < text.length || backwords) {
-        backwords = true;
-        speed = 25; 
-        setDisplayText(prevText => prevText.slice(0, -1));
-        j--;
-        if (j === 0) {
-          backwords = false;
-          i = (i + 1) % text.length;
-          speed = 50; 
-        }
-      } */}
 
 export default function Hero() {
     const text = ["Software Engineer", "Web Developer", "Game Dev Enthusiast", "Tech Enthusiast"];
@@ -27,15 +14,23 @@ export default function Hero() {
       <div></div>
      
       <img src={moon} className="w-1/5 z-0 animate-translateY " alt="Vite logo" /> 
-       <div className='z-0 font-boldbloom'>
-        <h1 className=" sm:text-4xl md:text-8xl lg:text-10xl text-while px-20">
+       <div className='z-0 font-boldbloom px-20'>
+        <h1 className=" sm:text-4xl md:text-8xl lg:text-10xl text-while">
                 Hi, I’m Shreeya!
        </h1>
-       <h2 className="flex items-center sm:text-2xl md:text-4xl lg:text-5xl text-while px-20">
+       <h2 className="flex items-center sm:text-2xl md:text-4xl lg:text-5xl text-while">
                 I'm a {displayText}
                 {isTyping && <span className="inline-block w-[1.5px] h-[1.2em] bg-white ml-1"> </span>}
                 {!isTyping && <span className="inline-block w-[1.5px] h-[1.2em] bg-white ml-1 animate-blink"> </span>}   
        </h2>
+       <div className='flex flex-row center-items'>
+        <button className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded-lg mr-4 transition duration-300">
+            Contact Me 
+        </button>
+        <button className="mt-8 bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
+            View My Work
+        </button>
+       </div>
        </div>
        
     </section>

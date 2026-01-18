@@ -15,16 +15,17 @@ export const useTypewriter = (text:string[], speed: number = 25) => {
         j++;
         console.log("Adding char:", j);
 
-      } else if (i < text.length - 1 && (j === text[i].length || backwords)) {
+      } else if (i < text.length - 1 && (j === text[i].length) && !backwords) {
         console.log("Deleting char:", j);
-
         backwords = true;
+      } else if (backwords && j >= 0) {
+        console.log("Deleting char:", j);
         setDisplayText(prevText => prevText.slice(0, -1));
         j--;
         if (j === 0) {
           backwords = false;
           i = (i + 1);
-        }
+        } 
       } else {
         clearInterval(typingInterval);
       }

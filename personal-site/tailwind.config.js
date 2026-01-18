@@ -3,14 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundSize: {
-        'custom': '80%',
-      },
       colors: {
         lpurple: "#DCCCFF",
         white: "#FFFFFF",
         wpurple: "#F2EBFF",
-        laven: "#C7AEFD",
+        purple: "#C7AEFD",
         black: "#000000",
         gray: "#6B7280",
         lightgray: "#9CA3AF",
@@ -22,6 +19,7 @@ export default {
         orange: "#F97316",
         lightorange: "#FB923C",
         darkblue:"#0a1356",
+        yellow: "#FBBF24",
       },
       fontFamily: {
         helvetica: ["Helvetica", "system-ui", "Arial", "sans-serif"],
@@ -31,6 +29,8 @@ export default {
       animation: {
         blink: "blink 1s step-start infinite",
         translateY: "translateY 0.5s ease-in-out infinite alternate",
+        slide: "slide 40s linear infinite",
+        pause: "animation-play-state: paused",
       },
       keyframes: {
         blink: {
@@ -40,6 +40,10 @@ export default {
         translateY: {
           "0%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(-10px)" },
+        },
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-100%))" },
         },
       },
     },
