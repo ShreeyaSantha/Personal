@@ -1,25 +1,25 @@
-import { useState,useEffect } from "react";
 import CarouselGallery from "./UI/Carousel-infinite";
 import type { Project } from "./types/types";
 import { ProgressBar } from "./UI/Progress";
 import email from "../assets/email.png";
 
-const projects: Project[] = [
+
+const projectsUpdated: Project[] = [
     {
-        title: "Project One",
-        description: "This is the first project description.",
-        langauges: ["React", "TypeScript"]
+        title: "House Price Prediction Model",
+        description: "Compared multiple regression algorithms to identify the best-performing model",
+        langauges: ["Python", "Matplotlib", "Seaborn"]
     },
     {
-        title: "Project Two",
-        description: "This is the second project description.",
-        langauges: ["CSS", "TypeScript"]
+        title: "Tic-Tac-Toe Game: Minecraft Edition",
+        description: "Built a  unique variation of Tic-Tac-Toe using Java and XML in Android Studio.",
+        langauges: ["XML", "Java"]
     },
     {
-        title: "Project Three",
-        description: "This is the third project description.",
-        langauges: ["React", "CSS"]
-    }
+        title: "Data Science Club Website",
+        description: "Developed new responsive website for the club & Helped create relational database for CXC hackathon ",
+        langauges: ["React", "Tailwind", "SQL"]
+    }, 
 ]
 
 
@@ -30,8 +30,8 @@ export default function Experience() {
         <section className = "relative h-screen w-full flex flex-col items-center justify-evenly px-8 py-16"> 
         <h1 className=" font-boldbloom text-4xl md:text-5xl font-bold">Projects</h1>
         {/* Carousel Project */}
-        <section className = "relative flex flex-row justify-between w-full h-2/3">
-            <CarouselGallery projects={projects} />
+        <section className = "relative flex flex-row justify-between w-full h-2/3 pt-8">
+            <CarouselGallery projects={projectsUpdated} />
         </section>
 
         {/* Skills and Interests */}

@@ -10,12 +10,18 @@ const languagesColors: {[key: string]: string} = {
     'React': 'bg-blue',
     'TypeScript': 'bg-yellow',
     'CSS': 'bg-purple',
+    'JavaScript': 'bg-yellow',
+    'Python': 'bg-green',
+    'Java': 'bg-red',
+    'HTML': 'bg-orange',
+    'Tailwind': 'bg-teal',
+    'SQL': 'bg-indigo',
     // Add more languages and their corresponding colors here
 };
 
 export default function Card({title, description, languages}: CardProps) {
     return (
-        <div className="transition-300 group relative flex aspect-[3/2] flex-col justify-end overflow-hidden rounded-3xl border border-grey3 px-6 pb-8 hover:border-grey2"> 
+        <div className="transition-300 group relative flex aspect-[3/2] flex-col justify-evenly overflow-hidden rounded-3xl border border-grey3 px-6 pb-8 hover:border-grey2"> 
             <h4 className="mb-2 text-2xl font-bold text-white">{title}</h4>
             <p className="transition-300 leading-loose text-grey2 group-hover:text-grey1 xl:text-lg"> {description} </p>
             <div className="mt-4 flex flex-wrap gap-2">

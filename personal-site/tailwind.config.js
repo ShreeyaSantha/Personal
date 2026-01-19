@@ -20,6 +20,12 @@ export default {
         lightorange: "#FB923C",
         darkblue:"#0a1356",
         yellow: "#FBBF24",
+        indigo: "#6366F1",
+        teal: "#14B8A6",
+        red: "#EF4444",
+        green: "#10b924",
+        sky: "#5fc9fa",
+
       },
       fontFamily: {
         helvetica: ["Helvetica", "system-ui", "Arial", "sans-serif"],
