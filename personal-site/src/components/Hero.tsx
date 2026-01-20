@@ -7,6 +7,10 @@ import bg2 from '../assets/bg2.png'
 export default function Hero() {
     const text = ["Software Engineer", "Web Developer", "Game Dev Enthusiast", "Tech Enthusiast"];
     const [displayText,isTyping] = useTypewriter(text, 120);
+    const scrollTo = (id:string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    };
     return (
     <section className="relative `bg-{}` bg-cover bg-no-repeat relative w-full h-screen flex flex-row justify-end items-center overflow-hidden" style={{
         backgroundImage: `url(${bg2})`,
@@ -28,10 +32,10 @@ export default function Hero() {
                 {!isTyping && <span className="inline-block w-[1.5px] h-[1.2em] bg-white ml-1 animate-blink"> </span>}   
        </h2>
        <div className='flex flex-row center-items'>
-        <button className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded-lg mr-4 transition duration-300">
+        <button onClick={() => scrollTo("contact")} className="mt-8 bg-white text-black font-semibold py-3 px-6 rounded-lg mr-4 transition duration-300">
             Contact Me 
         </button>
-        <button className="mt-8 bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
+        <button onClick={() => scrollTo("experience")} className="mt-8 bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-black transition duration-300">
             View My Work
         </button>
        </div>

@@ -3,7 +3,7 @@ import Star_Map from './UI/Star';
 
 export default function AboutMe() {
   return (
-    <section className=" relative h-screen w-full flex items-center justify-center px-8 py-16">
+    <section id = "about" className=" relative h-screen w-full flex items-center justify-center px-8 py-16">
         {/* Left Side - Image Content */}
         {Star_Map(20)}
         <div className="w-1/3 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg flex-shrink-0">
