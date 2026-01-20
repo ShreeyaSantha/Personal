@@ -18,9 +18,11 @@ export default function AboutMe() {
             <h1 className=" font-boldbloom text-4xl md:text-5xl font-bold mb-6">ABOUT.</h1>
             <h2 className="text-xl md:text-2xl font-semibold text-gray mb-4">Computer Science and Business Adminstration Student from University of Waterloo & Wilfrid Laurier University </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Write your about me paragraph here. Tell us about yourself, your
-              background, interests, and what drives you. This is your space to
-              share your story with the world.
+              Outside of school and work, I’m a WiCS executive member, volleyball player, and huge foodie. 
+              As a WiCS exec, I help organize events each term for women in tech, including jar-painting nights (one of my absolute favourites). 
+              If I’m not at a WiCS event, you can probably find me on the volleyball court or trying a new restaurant in Waterloo. 
+              I’m currently working on launching my own food blog to share my favourite spots and honest reviews.
+
             </p>
         </div>
 
