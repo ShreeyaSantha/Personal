@@ -2,12 +2,16 @@
 import moon from '../assets/moon.png'
 import Star_Map from './UI/Star';
 import { useTypewriter } from './UI/TypeWriter';
+import bg2 from '../assets/bg2.png'
 
 export default function Hero() {
     const text = ["Software Engineer", "Web Developer", "Game Dev Enthusiast", "Tech Enthusiast"];
     const [displayText,isTyping] = useTypewriter(text, 120);
     return (
-    <section className="relative bg-[url(../src/assets/bg2.png)] bg-cover bg-no-repeat relative w-full h-screen flex flex-row justify-end items-center overflow-hidden" style={{ backgroundSize: '130%' }}>
+    <section className="relative `bg-{}` bg-cover bg-no-repeat relative w-full h-screen flex flex-row justify-end items-center overflow-hidden" style={{
+        backgroundImage: `url(${bg2})`,
+        backgroundSize: '130%',
+      }}>
       <div className="absolute inset-0 bg-black opacity-50 -z-2"></div>
       {Star_Map(50)}
       {/* Moon image + Title */}  
