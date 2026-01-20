@@ -1,7 +1,6 @@
 import CarouselGallery from "./UI/Carousel-infinite";
 import type { Project } from "./types/types";
 import { ProgressBar } from "./UI/Progress";
-import email from "../assets/email.png";
 
 
 const projectsUpdated: Project[] = [
