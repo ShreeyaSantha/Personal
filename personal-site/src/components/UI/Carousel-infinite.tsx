@@ -33,9 +33,9 @@ export default function CarouselGallery({projects}: CarouselProps) {
   return (
     <section className="mb-section w-full h-auto overflow-hidden hover:animate-none">
       <div ref={carouselRef} className="carousel flex overflow-x-hidden no-scrollbar py-4" > {/* carousel*/}
-        <div className ="flex pr-4 items-center justify-center md:gap-4 animate-slide hover:animate-pause ">
+        <div className ="flex pr-4 items-center justify-center md:gap-4  hover:animate-pause ">
           {projects.map((project, index) => (
-            <div key={index} className="flex-none flex-none basis-[25em] align-center"> {/* card*/}
+            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-slide align-center"> {/* card*/}
               <div className= "h-auto w-[318px] md:w-auto rounded-3xl shadow-[0_0_3px_3px_rgba(100,120,150,0.8)] hover:shadow-[0_0_20px_5px_rgba(100,120,150,0.6)] transition-shadow duration-300">
                 <Card 
                   title={project.title}
@@ -46,10 +46,10 @@ export default function CarouselGallery({projects}: CarouselProps) {
             </div>            
           ))}
         </div>
-        <div className = "flex pr-4 items-center justify-center md:gap-4 animate-slide hover:animate-pause">
+        <div className ="flex pr-4 items-center justify-center md:gap-4  hover:animate-pause ">
           {projects.map((project, index) => (
-            <div key={index} className="flex-none flex-none basis-[25em] align-center"> {/* card*/}
-              <div className= "h-auto w-[318px] md:w-auto rounded-3xl shadow-[0_0_3px_3px_rgba(100,120,150,0.8)] hover:shadow-[0_0_20px_5px_rgba(100,120,150,0.6)] hover:animate-pause transition-shadow duration-300">
+            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-slide align-center"> {/* card*/}
+              <div className= "h-auto w-[318px] md:w-auto rounded-3xl shadow-[0_0_3px_3px_rgba(100,120,150,0.8)] hover:shadow-[0_0_20px_5px_rgba(100,120,150,0.6)] transition-shadow duration-300">
                 <Card 
                   title={project.title}
                   description={project.description}
@@ -58,8 +58,9 @@ export default function CarouselGallery({projects}: CarouselProps) {
               </div>
             </div>            
           ))}
-          </div>
-      </div>
+        </div>
+        </div>
+        
     </section>
   );
 }
