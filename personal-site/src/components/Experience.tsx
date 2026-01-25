@@ -27,15 +27,15 @@ export default function Experience() {
     
     return (
         <>
-        <section id = "experience" className = "relative h-screen w-full flex flex-col items-center justify-evenly px-8 py-16"> 
-        <h1 className=" font-boldbloom text-4xl md:text-5xl font-bold">Projects</h1>
+        <section id = "experience" className = "relative h-auto w-full flex flex-col items-center justify-center px-4 md:px-8 py-16 md:py-24"> 
+        <h1 className="font-boldbloom text-2xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-12">Projects</h1>
         {/* Carousel Project */}
-        <section className = "relative flex flex-row justify-between w-full h-2/3 pt-2">
+        <section className = "relative flex flex-row justify-between w-full h-1/5 md:h-1/4 pt-2 mb-8 md:mb-16">
             <CarouselGallery projects={projectsUpdated} />
         </section>
         {/* Skills and Interests */}
-        <h1 className=" font-boldbloom text-4xl md:text-5xl font-bold mb-2 py-8">Skills</h1>
-        <div className= "w-full flex flex-grid grid-cols-2 gap-4 h-auto">
+        <h1 className="font-boldbloom text-2xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 py-0 md:py-8">Skills</h1>
+        <div className="w-full max-w-4xl flex flex-col md:flex-row gap-8 md:gap-16 h-auto">
             <div className="w-full flex flex-col items-center">
              <ProgressBar label="JavaScript" value = {75}/>
              <ProgressBar label="React" value = {80}/>

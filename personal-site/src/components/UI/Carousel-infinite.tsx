@@ -31,7 +31,7 @@ export default function CarouselGallery({projects}: CarouselProps) {
   }, []);
 
   return (
-    <section className="mb-section w-full overflow-hidden hover:animate-none">
+    <section className="mb-section w-full h-auto overflow-hidden hover:animate-none">
       <div ref={carouselRef} className="carousel flex overflow-x-hidden no-scrollbar py-4" > {/* carousel*/}
         <div className ="flex pr-4 items-center justify-center gap-4 animate-slide hover:animate-pause ">
           {projects.map((project, index) => (

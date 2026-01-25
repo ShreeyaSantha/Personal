@@ -1,10 +1,10 @@
 import email from "../assets/email.png";
 export default function Contact() {
     return (
-        <section id="contact" className = "w-full h-auto flex flex-col items-center py-32 pb-16">
-                <h2 className=" font-boldbloom text-4xl md:text-5xl font-bold">Contact Me</h2> 
-                <p className="text-lg text-center mt-4">Feel free to reach out for collaborations or just a friendly chat!</p>
-                <div className="flex flex-row items-center gap-3">
+        <section id="contact" className = "w-full h-auto flex flex-col items-center justify-center px-4 md:px-8 py-16 md:py-32">
+                <h2 className="font-boldbloom text-2xl sm:text-4xl md:text-5xl font-bold">Contact Me</h2> 
+                <p className="text-sm sm:text-base md:text-lg text-center mt-4 max-w-2xl">Feel free to reach out for collaborations or just a friendly chat!</p>
+                <div className="flex flex-row items-center gap-4 sm:gap-6 mt-8 md:mt-12">
                 {/* Email */}
                 <a
                     href="mailto:ssantha@uwaterloo.ca"
