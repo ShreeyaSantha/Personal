@@ -37,6 +37,7 @@ export default {
         translateY: "translateY 0.5s ease-in-out infinite alternate",
         slide: "slide 30s linear infinite",
         pause: "animation-play-state: paused",
+        speed: "slide 20s linear infinite"
       },
       keyframes: {
         blink: {

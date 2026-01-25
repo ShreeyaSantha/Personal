@@ -35,7 +35,7 @@ export default function CarouselGallery({projects}: CarouselProps) {
       <div ref={carouselRef} className="carousel flex overflow-x-hidden no-scrollbar py-4" > {/* carousel*/}
         <div className ="flex pr-4 items-center justify-center md:gap-4  hover:animate-pause ">
           {projects.map((project, index) => (
-            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-slide align-center"> {/* card*/}
+            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-speed md:animate-slide align-center"> {/* card*/}
               <div className= "h-auto w-[318px] md:w-auto rounded-3xl shadow-[0_0_3px_3px_rgba(100,120,150,0.8)] hover:shadow-[0_0_20px_5px_rgba(100,120,150,0.6)] transition-shadow duration-300">
                 <Card 
                   title={project.title}
@@ -48,7 +48,7 @@ export default function CarouselGallery({projects}: CarouselProps) {
         </div>
         <div className ="flex pr-4 items-center justify-center md:gap-4  hover:animate-pause ">
           {projects.map((project, index) => (
-            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-slide align-center"> {/* card*/}
+            <div key={index} className="flex-none flex-none basis-[22em] md:basis-[25em] animate-speed md:animate-slide align-center"> {/* card*/}
               <div className= "h-auto w-[318px] md:w-auto rounded-3xl shadow-[0_0_3px_3px_rgba(100,120,150,0.8)] hover:shadow-[0_0_20px_5px_rgba(100,120,150,0.6)] transition-shadow duration-300">
                 <Card 
                   title={project.title}
