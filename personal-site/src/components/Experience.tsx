@@ -30,7 +30,7 @@ export default function Experience() {
         <section id = "experience" className = "relative h-auto w-full flex flex-col items-center justify-center px-4 md:px-8 py-16 md:py-24"> 
         <h1 className="font-boldbloom text-2xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-12">Projects</h1>
         {/* Carousel Project */}
-        <section className = "relative flex flex-row justify-between w-full h-1/5 md:h-1/4 pt-2 mb-8 md:mb-16">
+        <section className = "relative flex flex-row justify-between w-full h-1/6 md:h-1/4 pt-2 mb-8 md:mb-16">
             <CarouselGallery projects={projectsUpdated} />
         </section>
         {/* Skills and Interests */}

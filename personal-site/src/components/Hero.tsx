@@ -26,7 +26,7 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-4xl md:text-8xl lg:text-10xl text-white">
                 Hi, I’m Shreeya!
        </h1>
-       <h2 className="flex flex-col md:flex-row items-center justify-center md:justify-start text-lg sm:text-2xl md:text-4xl lg:text-5xl text-white mt-4 md:mt-0">
+       <h2 className="flex flex-row items-center justify-center md:justify-start text-lg sm:text-2xl md:text-4xl lg:text-5xl text-white mt-4 md:mt-0">
                 I'm a {displayText}
                 {isTyping && <span className="inline-block w-[1.5px] h-[1.2em] bg-white ml-0 md:ml-1"> </span>}
                 {!isTyping && <span className="inline-block w-[1.5px] h-[1.2em] bg-white ml-0 md:ml-1 animate-blink"> </span>}   
